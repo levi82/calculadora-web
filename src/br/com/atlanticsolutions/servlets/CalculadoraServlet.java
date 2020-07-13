@@ -30,12 +30,12 @@ public class CalculadoraServlet extends HttpServlet {
 		double numero2 = Double.parseDouble(request.getParameter("n2"));
 		String calculo = null;
 		
-		if (request.getParameter("Somar") != null) {
-			if (request.getParameter("Somar").equals("Somar")) {
+		if (request.getParameter("soma") != null) {
+			if (request.getParameter("soma").equals("Somar")) {
 				calculo = "A soma é: " + (numero1 + numero2);
 			}
-		} else if(request.getParameter("Subtrair") != null) {
-			 if(request.getParameter("Subtrair").equals("Subtrair")) {
+		} else if(request.getParameter("subtrair") != null) {
+			 if(request.getParameter("subtrair").equals("Subtrair")) {
 					calculo = "A subtração é: " + (numero1 - numero2);
 				}
 		}
